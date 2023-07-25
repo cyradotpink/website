@@ -1,81 +1,100 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <title>Kira's website</title>
+        <link rel="icon" href="favicon.svg" />
+        <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css" />
+        <style>
+            html {
+                --pink: #ffa69e;
+                --trans-pink: #ffa69e20;
+                --background: #2f3e46;
+                font-size: 20px;
+            }
+            body {
+                background-color: var(--background);
+                font-family: 'Fira Mono';
+                font-weight: bold;
+                --ref-size: min(1.125rem, 5vw);
+                font-size: var(--ref-size);
+            }
+            body,
+            a {
+                color: var(--trans-pink);
+            }
+            .pink,
+            .pink a {
+                color: var(--pink);
+            }
+            html,
+            body,
+            #c1 {
+                height: 100%;
+                margin: 0;
+                text-align: center;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: clip;
+            }
+            #c1 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #email-container {
+                text-align: right;
+                width: min(100%, calc(100vw - calc(var(--ref-size) * 1.5)));
+                display: inline-block;
+                font-weight: normal;
+                font-size: 0.8em;
+            }
+            #email-icon {
+                --size: calc(var(--ref-size) * 0.9);
+                transform: translateX(0.1em) translateY(-0.08em);
+                height: var(--size);
+                width: var(--size);
+                mask: url(/static/mail.svg) no-repeat center;
+                mask-size: contain;
+                background-color: var(--pink);
+                display: inline-block;
+                vertical-align: middle;
+            }
+        </style>
 
-<head>
-    <title>Kira's website</title>
-    <link rel="icon" href="favicon.svg">
-    <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
-    <style>
-        body {
-            background-color: #2F3E46;
-            font-family: "Fira Mono";
-            font-weight: bold;
-            font-size: min(1.125rem, 5vw);
-        }
-        body, a {
-            color: #FFA69E20;
-        }
-        .pink, .pink a {
-            color: #FFA69E;
-            fill: #FFA69E
-        }
-        html, body, #c1 {
-            height: 100%;
-            margin: 0;
-            text-align: center;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: clip;
-        }
-        #c1 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #email-container {
-            margin-top: min(10px, 2vw);
-            text-align: right;
-            width: min(100%, calc(100vw - min(40px, 10vw)));
-            display: inline-block;
-            font-weight: normal;
-            font-size: min(0.9rem, 4vw);
-        }
-        #email-container svg {
-            height: min(20px, 6vw);
-            display: inline-block;
-            vertical-align: middle;
-            margin-right: 3px;
-        }
-    </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-</head>
-
-<body>
-    <div id="c1">
-        <span>
-        --FULL_LENGTH--
-        <br>
-        --FULL_LENGTH--
-        <br>
-        --LEFT_OF_30--
-        <span class="pink">&nbsp;hiii im kira :D im on <a href="https://github.com/cyradotpink/">github</a>&nbsp;</span>
-        --RIGHT_OF_30--
-        <br>
-        --LEFT_OF_14--
-        <span class="pink">&nbsp;and <a rel="me" href="https://social.treehouse.systems/@kira">mastodon</a>&nbsp;</span>
-        --RIGHT_OF_14--
-        <br>
-        --FULL_LENGTH--
-        <br>
-        --FULL_LENGTH--
-        <br>
-        <div id="email-container" class="pink">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M 10.5 8 C 6.9280619 8 4 10.928062 4 14.5 L 4 33.5 C 4 37.071938 6.9280619 40 10.5 40 L 37.5 40 C 41.071938 40 44 37.071938 44 33.5 L 44 14.5 C 44 10.928062 41.071938 8 37.5 8 L 10.5 8 z M 10.5 11 L 37.5 11 C 39.450062 11 41 12.549938 41 14.5 L 41 15.605469 L 24 24.794922 L 7 15.605469 L 7 14.5 C 7 12.549938 8.5499381 11 10.5 11 z M 7 19.015625 L 23.287109 27.820312 A 1.50015 1.50015 0 0 0 24.712891 27.820312 L 41 19.015625 L 41 33.5 C 41 35.450062 39.450062 37 37.5 37 L 10.5 37 C 8.5499381 37 7 35.450062 7 33.5 L 7 19.015625 z"/>
-            </svg><a href="mailto:k@cyra.pink">k@cyra.pink</a>
+    <body>
+        <div id="c1">
+            <span>
+                --FULL_LENGTH--
+                <br />
+                --FULL_LENGTH--
+                <br />
+                --LEFT_OF_30--
+                <span class="pink"
+                    >&nbsp;hiii im kira :D im on
+                    <a href="https://github.com/cyradotpink/">github</a>&nbsp;</span
+                >
+                --RIGHT_OF_30--
+                <br />
+                --LEFT_OF_14--
+                <span class="pink"
+                    >&nbsp;and
+                    <a rel="me" href="https://social.treehouse.systems/@kira">mastodon</a
+                    >&nbsp;</span
+                >
+                --RIGHT_OF_14--
+                <br />
+                --FULL_LENGTH--
+                <br />
+                --FULL_LENGTH--
+                <br />
+                <div id="email-container" class="pink">
+                    <div id="email-icon"></div>
+                    <a href="mailto:k@cyra.pink">k@cyra.pink</a>
+                </div>
+            </span>
         </div>
-        </span>
-    </div>
-</body>
-
+    </body>
 </html>
