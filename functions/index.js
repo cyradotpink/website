@@ -35,7 +35,7 @@ const random_his = target_length => {
         lengths[length_index] = lengths[length_index] + 1;
         sum_length += 1;
     }
-    return lengths.reduce((acc, v) => (acc += make_hi(v) + ' '), '');
+    return lengths.reduce((acc, v) => (acc += make_hi(v) + ' '), '').slice(0, target_length);
 };
 
 const full_length = 70;
