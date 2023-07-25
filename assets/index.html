@@ -1,23 +1,30 @@
 <!DOCTYPE html>
+<html>
 
 <head>
     <title>Kira's website</title>
     <link rel="icon" href="favicon.svg">
-
     <link rel="stylesheet" href="https://code.cdn.mozilla.net/fonts/fira.css">
     <style>
         body {
             background-color: #2F3E46;
             font-family: "Fira Mono";
             font-weight: bold;
-            font-size: large;
+            font-size: min(1.125rem, 5vw);
         }
         body, a {
+            color: #FFA69E20;
+        }
+        .pink {
             color: #FFA69E;
         }
         html, body, #c1 {
             height: 100%;
             margin: 0;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: clip;
         }
         #c1 {
             display: flex;
@@ -32,11 +39,23 @@
 <body>
     <div id="c1">
         <span>
-            hiii im kira :D im on
-            <a href="https://github.com/cyradotpink/">github</a>
+        --FULL_LENGTH--
+        <br>
+        --FULL_LENGTH--
+        <br>
+        --LEFT_OF_30--
+        <span class="pink">&nbsp;hiii im kira :D im on <a class="pink" href="https://github.com/cyradotpink/">github</a>&nbsp;</span>
+        --RIGHT_OF_30--
+        <br>
+        --LEFT_OF_14--
+        <span class="pink">&nbsp;and <a class="pink" rel="me" href="https://social.treehouse.systems/@kira">mastodon</a>&nbsp;</span>
+        --RIGHT_OF_14--
+        <br>
+        --FULL_LENGTH--
+        <br>
+        --FULL_LENGTH--
         </span>
     </div>
-    <a style="display: none;" rel="me" href="https://social.treehouse.systems/@kira"></a>
 </body>
 
 </html>
