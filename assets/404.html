@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-
+<html>
 <head>
     <title>Kira's website</title>
     <link rel="icon" href="/favicon.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <style>
+        @font-face {
+            font-family: 'Fira Mono';
+            src: local('Fira Mono'), url('/static/fonts/FiraMono-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
+        html {
+            --pink: #ffa69e;
+            --trans-pink: #ffa69e20;
+            --background: #1d262b;
+            font-size: 20px;
+        }
+        body, a {
+            color: var(--pink);
+        }
+        body {
+            margin: 40px;
+            background-color: var(--background);
+            font-family: 'Fira Mono';
+            font-weight: regular;
+            --ref-size: min(1.125rem, 5vw);
+            font-size: var(--ref-size);
+        }
+    </style>
 </head>
 <body>
+    <p>get 404d idiot <a href="/">go home</a></p>
     <img src="static/waaa.gif"></img>
 </body>
+</html>

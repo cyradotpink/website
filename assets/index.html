@@ -1,112 +1,112 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Kira's website</title>
-        <link rel="icon" href="favicon.svg" />
-        <style>
-            @font-face {
-                font-family: 'Fira Mono';
-                src: local('Fira Mono'), url('/static/fonts/FiraMono-Regular.woff') format('woff');
-                font-weight: 400;
-                font-style: normal;
-            }
+<head>
+    <title>Kira's website</title>
+    <link rel="icon" href="favicon.svg" />
+    <style>
+        @font-face {
+            font-family: 'Fira Mono';
+            src: local('Fira Mono'), url('/static/fonts/FiraMono-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+        }
 
-            @font-face {
-                font-family: 'Fira Mono';
-                src: local('Fira Mono Bold'), url('/static/fonts/FiraMono-Bold.woff') format('woff');
-                font-weight: 600;
-                font-style: normal;
-            }
+        @font-face {
+            font-family: 'Fira Mono';
+            src: local('Fira Mono Bold'), url('/static/fonts/FiraMono-Bold.woff') format('woff');
+            font-weight: 600;
+            font-style: normal;
+        }
 
-            html {
-                --pink: #ffa69e;
-                --trans-pink: #ffa69e20;
-                --background: #1d262b;
-                font-size: 20px;
-            }
-            body {
-                background-color: var(--background);
-                font-family: 'Fira Mono';
-                font-weight: bold;
-                --ref-size: min(1.125rem, 5vw);
-                font-size: var(--ref-size);
-            }
-            body,
-            a {
-                color: var(--trans-pink);
-            }
-            .pink,
-            .pink a {
-                color: var(--pink);
-            }
-            html,
-            body,
-            #c1 {
-                height: 100%;
-                margin: 0;
-                text-align: center;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: clip;
-            }
-            #c1 {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            #email-container {
-                text-align: right;
-                width: min(100%, calc(100vw - calc(var(--ref-size) * 1.5)));
-                display: inline-block;
-                font-weight: normal;
-                font-size: 0.8em;
-            }
-            #email-icon {
-                --size: calc(var(--ref-size) * 0.9);
-                transform: translateX(0.1em) translateY(-0.08em);
-                height: var(--size);
-                width: var(--size);
-                mask: url(/static/mail.svg) no-repeat center;
-                mask-size: contain;
-                background-color: var(--pink);
-                display: inline-block;
-                vertical-align: middle;
-            }
-        </style>
+        html {
+            --pink: #ffa69e;
+            --trans-pink: #ffa69e20;
+            --background: #1d262b;
+            font-size: 20px;
+        }
+        body {
+            background-color: var(--background);
+            font-family: 'Fira Mono';
+            font-weight: bold;
+            --ref-size: min(1.125rem, 5vw);
+            font-size: var(--ref-size);
+        }
+        body,
+        a {
+            color: var(--trans-pink);
+        }
+        .pink,
+        .pink a {
+            color: var(--pink);
+        }
+        html,
+        body,
+        #c1 {
+            height: 100%;
+            margin: 0;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: clip;
+        }
+        #c1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #email-container {
+            text-align: right;
+            width: min(100%, calc(100vw - calc(var(--ref-size) * 1.5)));
+            display: inline-block;
+            font-weight: normal;
+            font-size: 0.8em;
+        }
+        #email-icon {
+            --size: calc(var(--ref-size) * 0.9);
+            transform: translateX(0.1em) translateY(-0.08em);
+            height: var(--size);
+            width: var(--size);
+            mask: url(/static/mail.svg) no-repeat center;
+            mask-size: contain;
+            background-color: var(--pink);
+            display: inline-block;
+            vertical-align: middle;
+        }
+    </style>
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 
-    <body>
-        <div id="c1">
-            <span>
-                --FULL_LENGTH--
-                <br />
-                --FULL_LENGTH--
-                <br />
-                --LEFT_OF_30--
-                <span class="pink"
-                    >&nbsp;hiii im kira :D im on
-                    <a href="https://github.com/cyradotpink/">github</a>&nbsp;</span
-                >
-                --RIGHT_OF_30--
-                <br />
-                --LEFT_OF_13--
-                <span class="pink"
-                    >&nbsp;and
-                    <a rel="me" href="https://bsky.app/profile/cyra.pink">bluesky</a>&nbsp;</span
-                >
-                --RIGHT_OF_13--
-                <br />
-                --FULL_LENGTH--
-                <br />
-                --FULL_LENGTH--
-                <br />
-                <div id="email-container" class="pink">
-                    <div id="email-icon"></div>
-                    <a href="mailto:k@cyra.pink">k@cyra.pink</a>
-                </div>
-            </span>
-        </div>
-    </body>
+<body>
+    <div id="c1">
+        <span>
+            --FULL_LENGTH--
+            <br />
+            --FULL_LENGTH--
+            <br />
+            --LEFT_OF_30--
+            <span class="pink"
+                >&nbsp;hiii im kira :D im on
+                <a href="https://github.com/cyradotpink/">github</a>&nbsp;</span
+            >
+            --RIGHT_OF_30--
+            <br />
+            --LEFT_OF_13--
+            <span class="pink"
+                >&nbsp;and
+                <a rel="me" href="https://bsky.app/profile/cyra.pink">bluesky</a>&nbsp;</span
+            >
+            --RIGHT_OF_13--
+            <br />
+            --FULL_LENGTH--
+            <br />
+            --FULL_LENGTH--
+            <br />
+            <div id="email-container" class="pink">
+                <div id="email-icon"></div>
+                <a href="mailto:k@cyra.pink">k@cyra.pink</a>
+            </div>
+        </span>
+    </div>
+</body>
 </html>
